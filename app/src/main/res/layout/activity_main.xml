@@ -8,7 +8,6 @@
     android:background="@color/lookingGood2"
     tools:context=".MainActivity">
 
-
     <Toolbar
         android:id="@+id/toolbar3"
         android:layout_width="match_parent"
@@ -18,7 +17,6 @@
         app:layout_constraintStart_toStartOf="@id/searchView"
         android:background="@color/lookingGood3"
         />
-
     <SearchView
         android:id="@+id/searchView"
         android:layout_width="300dp"
@@ -32,9 +30,5 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
-
         />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
