@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">EasyReader</string>
+    <string name="home">Home</string>
+    <string name="add">Add</string>
+    <string name="settings">Settings</string>
 </resources>
