@@ -13,7 +13,7 @@ EasyReader is an app that is supposed to:
 <li>Let you import PDF files </li> 
 </ul>
 
-The app is intended to be released for Android  (and maybe iOS devices????) devices
+The app is intended to be released for Android  (and maybe iOS ????) devices
 # :sparkles:Installation
 
 //WIP
