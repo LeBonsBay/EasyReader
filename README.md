@@ -14,6 +14,9 @@ EasyReader is an app that is supposed to:
 </ul>
 
 The app is intended to be released for Android  (and maybe iOS ????) devices
+
+> [!NOTE]
+> This project is still in early development
 # :sparkles:Installation
 
 //WIP
