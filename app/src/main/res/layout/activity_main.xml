@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lookingGood2"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+
+    >
 
     <view
         android:id="@+id/view"
@@ -27,43 +29,8 @@
         android:background="@color/lookingGood3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintHorizontal_bias="0.961"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:id="@+id/button_home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:background="@android:color/transparent"
-            android:text="@string/home"
-            app:icon="@drawable/bottomview_home_24" />
-
-        <Button
-            android:id="@+id/button_add"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="150dp"
-            android:layout_marginTop="18dp"
-            android:background="@android:color/transparent"
-            android:text="@string/add"
-            app:icon="@drawable/outline_add_circle_24" />
-
-
-        <Button
-            android:id="@+id/button_settings"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="270dp"
-            android:layout_marginTop="18dp"
-            android:background="@android:color/transparent"
-            android:text="@string/settings"
-            app:icon="@drawable/settings_adb_24" />
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
 
     <Toolbar
         android:id="@+id/toolbar3"
@@ -107,13 +74,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottomNavigationView"
+        app:constraintSet="@drawable/tbate">
+
+    </androidx.cardview.widget.CardView>
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="411dp"
+        android:layout_marginEnd="0dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintGuide_begin="21dp"
         app:layout_constraintStart_toEndOf="@+id/toolbar3" />
+
+    <ImageView
+        android:layout_width="94dp"
+        android:layout_height="140dp"
+        android:contentDescription="@string/test"
+        android:src="@drawable/tbate"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.169" />
 </androidx.constraintlayout.widget.ConstraintLayout>
