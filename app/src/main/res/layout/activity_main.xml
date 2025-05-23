@@ -9,7 +9,6 @@
     tools:context=".MainActivity"
 
     >
-
     <view
         android:id="@+id/view"
         class="android.view.View"
@@ -60,6 +59,10 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <!--
+    dont forget to change hint for typing...
+    -->
 
     <View
         android:id="@+id/view2"
