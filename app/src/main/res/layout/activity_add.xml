@@ -2,28 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_settings"
+    android:id="@+id/main_add"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lookingGood2"
     tools:context=".MainActivity"
 
     >
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/settings"
-        android:textColor="@color/moonstoneGrey"
-        android:textSize="35sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-    <!--
-    integrate Preference for example "About", onclick shows...
-    integrate Preference "Theme" for example Light/Dark Mode (do this at the end)
-    also watch tutorial or something for Preference
-    -->
-
     <view
         android:id="@+id/view"
         class="android.view.View"
@@ -53,8 +38,31 @@
         android:layout_marginBottom="674dp"
         android:background="@color/lookingGood3"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/searchView"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.828"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <!--
+    add that on icon click the searchbar extends...(or not?)
+    -->
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/searchview_background"
+        android:layoutDirection="rtl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--
+    dont forget to change hint for typing...
+    -->
 
     <View
         android:id="@+id/view2"
@@ -68,6 +76,18 @@
         app:layout_constraintStart_toEndOf="@+id/toolbar3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottomNavigationView"
+        app:constraintSet="@drawable/tbate">
+
+    </androidx.cardview.widget.CardView>
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
@@ -77,4 +97,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintGuide_begin="21dp"
         app:layout_constraintStart_toEndOf="@+id/toolbar3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
